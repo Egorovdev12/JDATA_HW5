@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface PersonRepository extends JpaRepository<Person, Long> {
-    List<Person> findByCityOfLiving(String CityOfLiving);
+    List<Person> findByCityOfLiving(String cityOfLiving);
     List<Person> findByAgeIsLessThan(int age);
     Optional<List<Person>> findByNameAndSurname(String name, String surname);
 }
